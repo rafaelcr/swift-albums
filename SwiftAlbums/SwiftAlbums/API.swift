@@ -10,7 +10,7 @@ import Foundation
 
 class API {
 
-  func getAlbums() {
+  func getAlbums(completion: @escaping ([Artist]) -> Void) {
     let url = "https://bit.ly/2HaKQSC"
     Alamofire
       .request(url)
@@ -33,6 +33,8 @@ class API {
             let artist = Artist(name: artistJSON["name"] as! String,
                                 albums: albums)
             artists.append(artist)
+
+            completion(artists)
           }
         }
 
