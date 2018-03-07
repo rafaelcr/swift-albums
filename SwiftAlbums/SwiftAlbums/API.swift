@@ -23,7 +23,7 @@ class API {
             var albums = [Album]()
             if let albumsJSON = artistJSON["albums"] as? [[String: Any]] {
               for albumJSON in albumsJSON {
-                let album = Album(name: albumJSON["name"] as! String,
+                let album = Album(name: albumJSON["title"] as! String,
                                   year: albumJSON["year"] as! Int,
                                   description: albumJSON["description"] as! String,
                                   coverURL: albumJSON["cover"] as! String)

@@ -22,9 +22,26 @@ class AlbumsViewController: UITableViewController {
     return artists[section].albums.count
   }
 
-  func tableView(_ tableView: UITableView,
-                 titleForHeaderInSection section: Int) -> String? {
+  override func tableView(_ tableView: UITableView,
+                          titleForHeaderInSection section: Int) -> String? {
     return artists[section].name
+  }
+
+  override func tableView(_ tableView: UITableView,
+                          cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumCell") as! AlbumCell
+    let album = artists[indexPath.section].albums[indexPath.row]
+    cell.label.text = album.name
+    return cell
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    let api = API()
+    api.getAlbums { (artists) in
+      self.artists = artists
+      self.tableView.reloadData()
+    }
   }
 
 }
