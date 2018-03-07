@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5D6327204F7081000484AC /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D6326204F7081000484AC /* Album.swift */; };
+		5B5D6329204F70FD000484AC /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D6328204F70FD000484AC /* Artist.swift */; };
+		5B5D632B204F724A000484AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D632A204F724A000484AC /* API.swift */; };
 		5B6CBCD220490F0D00A99CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6CBCD120490F0D00A99CC9 /* AppDelegate.swift */; };
 		5B6CBCD420490F0D00A99CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6CBCD320490F0D00A99CC9 /* ViewController.swift */; };
 		5B6CBCD720490F0D00A99CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CBCD520490F0D00A99CC9 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* Begin PBXFileReference section */
 		3BD1072CDD542056D738E74B /* Pods_SwiftAlbums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAlbums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B418ED727B9D46E84FDDB1 /* Pods-SwiftAlbums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAlbums.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAlbums/Pods-SwiftAlbums.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5D6326204F7081000484AC /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		5B5D6328204F70FD000484AC /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		5B5D632A204F724A000484AC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5B6CBCCE20490F0D00A99CC9 /* SwiftAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6CBCD120490F0D00A99CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6CBCD320490F0D00A99CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 				5B6CBCD820490F0D00A99CC9 /* Assets.xcassets */,
 				5B6CBCDA20490F0D00A99CC9 /* LaunchScreen.storyboard */,
 				5B6CBCDD20490F0D00A99CC9 /* Info.plist */,
+				5B5D6326204F7081000484AC /* Album.swift */,
+				5B5D6328204F70FD000484AC /* Artist.swift */,
+				5B5D632A204F724A000484AC /* API.swift */,
 			);
 			path = SwiftAlbums;
 			sourceTree = "<group>";
@@ -221,6 +230,9 @@
 			files = (
 				5B6CBCD420490F0D00A99CC9 /* ViewController.swift in Sources */,
 				5B6CBCD220490F0D00A99CC9 /* AppDelegate.swift in Sources */,
+				5B5D6329204F70FD000484AC /* Artist.swift in Sources */,
+				5B5D6327204F7081000484AC /* Album.swift in Sources */,
+				5B5D632B204F724A000484AC /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
