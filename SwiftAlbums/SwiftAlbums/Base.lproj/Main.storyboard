@@ -31,6 +31,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-gp-IGf">
                                             <rect key="frame" x="10" y="10" width="84" height="84"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="84" id="L5N-Mf-hVH"/>
                                                 <constraint firstAttribute="width" secondItem="hXt-gp-IGf" secondAttribute="height" multiplier="1:1" id="zfj-37-A1Z"/>
                                             </constraints>
                                         </imageView>
@@ -68,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="732" y="-15.742128935532236"/>
         </scene>
-        <!--View Controller-->
+        <!--Album Detail View Controller-->
         <scene sceneID="Wm8-UB-WQ8">
             <objects>
-                <viewController id="Lmp-zF-nc0" sceneMemberID="viewController">
+                <viewController id="Lmp-zF-nc0" customClass="AlbumDetailViewController" customModule="SwiftAlbums" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WWv-Zc-WrD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,6 +110,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eIu-FD-wNw"/>
                     </view>
+                    <connections>
+                        <outlet property="cover" destination="g41-Wl-e2R" id="Zio-dh-44a"/>
+                        <outlet property="descriptionLabel" destination="0SC-OE-Auj" id="Pi5-VE-fF2"/>
+                        <outlet property="titleLabel" destination="cNb-ZM-D5L" id="Ve4-GM-9wr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGv-hd-w2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

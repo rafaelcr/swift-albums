@@ -11,6 +11,7 @@
 		5B5D6329204F70FD000484AC /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D6328204F70FD000484AC /* Artist.swift */; };
 		5B5D632B204F724A000484AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D632A204F724A000484AC /* API.swift */; };
 		5B5D632D204F775F000484AC /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D632C204F775F000484AC /* AlbumsViewController.swift */; };
+		5B5D632F204F812B000484AC /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D632E204F812B000484AC /* AlbumDetailViewController.swift */; };
 		5B6CBCD220490F0D00A99CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6CBCD120490F0D00A99CC9 /* AppDelegate.swift */; };
 		5B6CBCD420490F0D00A99CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6CBCD320490F0D00A99CC9 /* ViewController.swift */; };
 		5B6CBCD720490F0D00A99CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6CBCD520490F0D00A99CC9 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		5B5D6328204F70FD000484AC /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		5B5D632A204F724A000484AC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5B5D632C204F775F000484AC /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		5B5D632E204F812B000484AC /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		5B6CBCCE20490F0D00A99CC9 /* SwiftAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6CBCD120490F0D00A99CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6CBCD320490F0D00A99CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				5B6CBCD120490F0D00A99CC9 /* AppDelegate.swift */,
 				5B6CBCD320490F0D00A99CC9 /* ViewController.swift */,
 				5B6CBCD520490F0D00A99CC9 /* Main.storyboard */,
+				5B5D632E204F812B000484AC /* AlbumDetailViewController.swift */,
 				5B6CBCD820490F0D00A99CC9 /* Assets.xcassets */,
 				5B6CBCDA20490F0D00A99CC9 /* LaunchScreen.storyboard */,
 				5B6CBCDD20490F0D00A99CC9 /* Info.plist */,
@@ -235,6 +238,7 @@
 				5B6CBCD220490F0D00A99CC9 /* AppDelegate.swift in Sources */,
 				5B5D632D204F775F000484AC /* AlbumsViewController.swift in Sources */,
 				5B5D6329204F70FD000484AC /* Artist.swift in Sources */,
+				5B5D632F204F812B000484AC /* AlbumDetailViewController.swift in Sources */,
 				5B5D6327204F7081000484AC /* Album.swift in Sources */,
 				5B5D632B204F724A000484AC /* API.swift in Sources */,
 			);

@@ -5,7 +5,7 @@
 //  Created by Rafael Cardenas on 3/6/18.
 //  Copyright © 2018 Rafael Cárdenas. All rights reserved.
 //
-
+import AlamofireImage
 import Foundation
 import UIKit
 
@@ -32,6 +32,7 @@ class AlbumsViewController: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumCell") as! AlbumCell
     let album = artists[indexPath.section].albums[indexPath.row]
     cell.label.text = album.name
+    cell.cover.af_setImage(withURL: URL(string: album.coverURL)!)
     return cell
   }
 
@@ -42,6 +43,13 @@ class AlbumsViewController: UITableViewController {
       self.artists = artists
       self.tableView.reloadData()
     }
+  }
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let index = tableView.indexPathForSelectedRow!
+    let album = artists[index.section].albums[index.row]
+    let detail = segue.destination as! AlbumDetailViewController
+    detail.album = album
   }
 
 }
