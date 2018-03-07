@@ -15,13 +15,13 @@
         <!--Albums-->
         <scene sceneID="cgS-sp-zsY">
             <objects>
-                <tableViewController id="e8S-7s-s9T" sceneMemberID="viewController">
+                <tableViewController id="e8S-7s-s9T" customClass="AlbumsViewController" customModule="SwiftAlbums" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kwh-OJ-GwF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="105" id="jPK-TE-Qub">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="105" id="jPK-TE-Qub" customClass="AlbumCell" customModule="SwiftAlbums" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPK-TE-Qub" id="YvA-5d-X9S">
@@ -51,6 +51,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cover" destination="hXt-gp-IGf" id="vzg-dd-5Lc"/>
+                                    <outlet property="label" destination="Wyr-LC-mzQ" id="uof-Ya-nQl"/>
                                     <segue destination="Lmp-zF-nc0" kind="show" id="kx3-1O-aJN"/>
                                 </connections>
                             </tableViewCell>
